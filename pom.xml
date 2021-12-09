@@ -116,7 +116,7 @@
 
     <properties>
         <json.schema.validator.version>2.2.8</json.schema.validator.version>
-        <jackson.version>2.7.3</jackson.version>
+        <jackson.version>2.9.10.8</jackson.version>
         <commons.io.version>2.4</commons.io.version>
         <commons.lang3.version>3.4</commons.lang3.version>
         <freemarker.version>2.3.23</freemarker.version>
