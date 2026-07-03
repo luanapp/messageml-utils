@@ -1,0 +1,11 @@
+<messageML>
+    <code>
+        Code without language defined
+    </code>
+    <code language="java">
+        public void someMethod(String someAttribute) {
+            System.out.println("This is a code block");
+            System.out.println("Value of Attribute:" + someAttribute);
+        }
+    </code>
+</messageML>

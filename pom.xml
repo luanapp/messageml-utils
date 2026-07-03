@@ -1,41 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>org.symphonyoss</groupId>
-        <artifactId>symphonyoss</artifactId>
-        <version>2</version>
-    </parent>
-
-    <groupId>org.symphonyoss.symphony</groupId>
-    <artifactId>messageml</artifactId>
-    <version>0.9.32-SNAPSHOT</version>
+    <groupId>org.finos.symphony.messageml</groupId>
+    <artifactId>messageml-utils</artifactId>
+    <version>1.5.0</version>
     <name>MessageML Utils</name>
-    <url>https://github.com/symphonyoss/messageml-utils</url>
-    <description>A set of utilities for parsing, processing and rendering of MessageML messages</description>
-
-    <!--
-  ~
-  ~ Copyright 2016 The Symphony Software Foundation
-  ~
-  ~ Licensed to The Symphony Software Foundation (SSF) under one
-  ~ or more contributor license agreements.  See the NOTICE file
-  ~ distributed with this work for additional information
-  ~ regarding copyright ownership.  The SSF licenses this file
-  ~ to you under the Apache License, Version 2.0 (the
-  ~ "License"); you may not use this file except in compliance
-  ~ with the License.  You may obtain a copy of the License at
-  ~
-  ~   http://www.apache.org/licenses/LICENSE-2.0
-  ~
-  ~ Unless required by applicable law or agreed to in writing,
-  ~ software distributed under the License is distributed on an
-  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-  ~ KIND, either express or implied.  See the License for the
-  ~ specific language governing permissions and limitations
-  ~ under the License.
-  -->
+    <url>https://github.com/finos/messageml-utils</url>
+    <description>A set of utilities for parsing, processing and rendering of MessageML messages
+    </description>
 
     <licenses>
         <license>
@@ -45,86 +20,47 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git://github.com/symphonyoss/messageml-utils.git</connection>
-        <developerConnection>scm:git:git@github.com:symphonyoss/messageml-utils.git</developerConnection>
-        <url>https://github.com/symphonyoss/messageml-utils</url>
-        <tag>HEAD</tag>
+        <connection>scm:git:git://github.com/finos/messageml-utils.git</connection>
+        <developerConnection>scm:git:https://github.com/finos/messageml-utils.git
+        </developerConnection>
+        <url>https://github.com/finos/messageml-utils</url>
     </scm>
 
-    <developers>
-        <developer>
-            <id>ldrozdz</id>
-            <name>Łukasz Dróżdż</name>
-            <email>lukasz@symphony.com</email>
-            <url>http://github.com/ldrozdz</url>
-            <organization>Symphony Communication Services LLC</organization>
-            <organizationUrl>http://symphony.com</organizationUrl>
-            <roles>
-                <role>Senior Developer Platform</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>bruceskingle</id>
-            <name>Bruce Skingle</name>
-            <email>bruce.skingle@symphony.com</email>
-            <url>http://github.com/bruceskingle</url>
-            <organization>Symphony Communication Services LLC</organization>
-            <organizationUrl>http://symphony.com</organizationUrl>
-            <roles>
-                <role>Principal Software Engineer</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>cristiadu</id>
-            <name>Cristiano Faustino</name>
-            <email>cristiano.faustino@symphony.com</email>
-            <url>http://github.com/cristiadu</url>
-            <organization>Symphony Communication Services LLC</organization>
-            <organizationUrl>http://symphony.com</organizationUrl>
-            <roles>
-                <role>Software Developer</role>
-            </roles>
-        </developer>
-    </developers>
-
-    <contributors>
-        <contributor>
-            <name>Adrian Zarifis</name>
-            <email>adrian.zarifis@symphony.com</email>
-            <organization>Symphony</organization>
-            <roles>
-                <role>QA Engineer</role>
-            </roles>
-        </contributor>
-        <contributor>
-            <name>Daniel Nathanson</name>
-            <email>daniel.nathanson@symphony.com</email>
-            <organization>Symphony Communication Services LLC</organization>
-            <roles>
-                <role>Senior Director Platform Engineering</role>
-            </roles>
-        </contributor>
-        <contributor>
-            <name>Paul Teyssier</name>
-            <email>p@symphony.com</email>
-            <organization>Symphony Communication Services LLC</organization>
-            <roles>
-                <role>Senior Director Platform</role>
-            </roles>
-        </contributor>
-    </contributors>
-
     <properties>
-        <json.schema.validator.version>2.2.8</json.schema.validator.version>
-        <jackson.version>2.7.3</jackson.version>
-        <commons.io.version>2.4</commons.io.version>
-        <commons.lang3.version>3.4</commons.lang3.version>
-        <freemarker.version>2.3.23</freemarker.version>
-        <commonmark.version>0.10.0</commonmark.version>
-        <junit.version>4.12</junit.version>
-        <mockito.version>1.9.5</mockito.version>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+
+        <json.schema.validator.version>2.2.14</json.schema.validator.version>
+        <jackson.core.version>2.15.2</jackson.core.version>
+        <jackson.databind.version>2.15.2</jackson.databind.version>
+        <commons.io.version>2.11.0</commons.io.version>
+        <commons.lang3.version>3.12.0</commons.lang3.version>
+        <freemarker.version>2.3.34</freemarker.version>
+        <commonmark.version>0.15.2</commonmark.version>
+        <mozilla.rhino.version>1.7.13</mozilla.rhino.version>
+        <junit.version>5.8.2</junit.version>
+        <mockito.version>4.0.0</mockito.version>
+        <slf4j.version>1.7.32</slf4j.version>
+        <logback.version>1.2.9</logback.version>
+        <jmh.version>1.33</jmh.version>
+        <xmlunit.version>2.8.3</xmlunit.version>
+        <lombok.version>1.18.22</lombok.version>
+        <guava.version>32.1.2-jre</guava.version>
+
+        <!-- Maven Plugins -->
+        <jacoco-maven-plugin.version>0.8.7</jacoco-maven-plugin.version>
+        <central-publishing-maven-plugin.version>0.9.0</central-publishing-maven-plugin.version>
+        <maven-gpg-plugin.version>3.2.7</maven-gpg-plugin.version>
+        <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
+        <maven-javadoc-plugin.version>3.3.2</maven-javadoc-plugin.version>
+        <maven-deploy-plugin.version>3.0.0-M1</maven-deploy-plugin.version>
+        <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+
+        <!-- Project Properties -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <gpg.useagent>true</gpg.useagent>
+
     </properties>
 
     <profiles>
@@ -134,26 +70,112 @@
                 <jdk>[1.8,)</jdk>
             </activation>
             <properties>
-                <additionalparam>-Xdoclint:none</additionalparam>
+                <doclint>none</doclint>
             </properties>
+        </profile>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.sonatype.central</groupId>
+                        <artifactId>central-publishing-maven-plugin</artifactId>
+                        <version>${central-publishing-maven-plugin.version}</version>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <publishingServerId>ossrh</publishingServerId>
+                            <autoPublish>true</autoPublish>
+                            <waitUntil>published</waitUntil>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>sign-release-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                                <configuration>
+                                    <gpgArguments>
+                                        <arg>--pinentry-mode</arg>
+                                        <arg>loopback</arg>
+                                    </gpgArguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                    </plugin>
+                </plugins>
+            </build>
         </profile>
     </profiles>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>junit-bom</artifactId>
+                <version>${junit.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <dependencies>
         <dependency>
-		        <groupId>com.github.java-json-tools</groupId>
-		        <artifactId>json-schema-validator</artifactId>
-		        <version>${json.schema.validator.version}</version>
-	      </dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.java-json-tools</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>${json.schema.validator.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.mozilla</groupId>
+                    <artifactId>rhino</artifactId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>guava</artifactId>
+                    <groupId>com.google.guava</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>jackson-databind</artifactId>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.mozilla</groupId>
+            <artifactId>rhino</artifactId>
+            <version>${mozilla.rhino.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>${jackson.version}</version>
+            <version>${jackson.core.version}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>${jackson.version}</version>
+            <version>${jackson.databind.version}</version>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>
@@ -171,22 +193,136 @@
             <version>${freemarker.version}</version>
         </dependency>
         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.atlassian.commonmark</groupId>
             <artifactId>commonmark</artifactId>
             <version>${commonmark.version}</version>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
-            <artifactId>mockito-all</artifactId>
+            <artifactId>mockito-core</artifactId>
             <version>${mockito.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-core</artifactId>
+            <version>${jmh.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-generator-annprocess</artifactId>
+            <version>${jmh.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.xmlunit</groupId>
+            <artifactId>xmlunit-core</artifactId>
+            <version>${xmlunit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
+
+    <build>
+        <pluginManagement>
+            <!-- Use recent versions of the plugins -->
+            <plugins>
+                <plugin>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    <version>${jacoco-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-gpg-plugin</artifactId>
+                    <version>${maven-gpg-plugin.version}</version>
+                    <configuration>
+                        <gpgArguments>
+                            <arg>--digest-algo=SHA512</arg>
+                        </gpgArguments>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>${maven-source-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>attach-sources</id>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${maven-javadoc-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>attach-javadocs</id>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <developers>
+        <developer>
+            <id>ldrozdz</id>
+            <name>Łukasz Dróżdż</name>
+            <email>lukasz@symphony.com</email>
+            <url>http://github.com/ldrozdz</url>
+            <organization>Symphony Communication Services LLC</organization>
+            <organizationUrl>http://symphony.com</organizationUrl>
+            <roles>
+                <role>Senior Developer Platform</role>
+            </roles>
+        </developer>
+    </developers>
 
 </project>

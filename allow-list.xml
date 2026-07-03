@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suppressions xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.3.xsd">
+    <suppress>
+        <notes><![CDATA[
+        createTempDir() is not used in the project. There is no fix in the dependency outside not using the method
+        ]]></notes>
+        <gav>commons-io:commons-io:2.0.1</gav>
+        <cve>CVE-2021-29425</cve>
+    </suppress>
+</suppressions>
